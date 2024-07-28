@@ -1,0 +1,259 @@
+#root {
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  width: 100%;
+  /* padding: 2rem; */
+  text-align: center;
+  font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Arial', sans-serif; */
+  background: rgb(44,42,50);
+background: linear-gradient(0deg, rgba(44,42,50,1) 0%, rgba(64,67,122,1) 97%);
+  color: #ffffff;
+}
+svg{
+  color: white;
+}
+.nav-wrapper{
+  display: flex;
+  gap: 20px;
+}
+
+
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+
+.logo {
+  width: 150px;
+}
+.navigation{
+  display: flex;
+    align-items: center;
+    gap: 54px;
+}
+
+.navigation a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.menu-button {
+  border: none;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  background: white;
+  border-radius: 50%;
+}
+
+.App-main {
+  text-align: center;
+  display: flex;
+}
+
+.hero h1 {
+  font-size: 3em;
+    font-family: auto;
+    width: 35%;
+}
+
+.hero p {
+  font-size: 1.2em;
+    opacity: 0.5;
+    width: 36%;
+    text-align: center;
+    font-family: auto;
+}
+.msg-wrapper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-indicator {
+  margin-top: 50px;
+}
+
+.scroll-text {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.scroll-arrow {
+  font-size: 2em;
+}
+
+.background-balls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.ball {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.blue {
+  background-color: #3b82f6;
+}
+
+.orange {
+  background-color: #f59e0b;
+}
+
+/* Adjust sizes and positions as needed */
+.ball.blue {
+  width: 50px;
+  height: 50px;
+  top: 10%;
+  left: 80%;
+}
+
+.ball.orange {
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 90%;
+}
+
+
+.App {
+  text-align: center;
+}
+
+
+.App-main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero {
+  position: absolute;
+  top: 10%;
+  /* left: 42%; */
+  /* transform: translate(-50%, -50%); */
+  color: white;
+  text-align: left;
+}
+
+.scroll-indicator {
+  margin-top: 20px;
+}
+
+.scroll-text {
+  display: block;
+}
+
+.scroll-arrow {
+  font-size: 24px;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-button {
+  margin-left: auto;
+}
+
+.App-main {
+  position: relative;
+}
+
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000; /* Background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's above all other content */
+}
+.splash-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black; /* Change this to your preferred background color */
+}
+
+.shining-line {
+  width: 12%;
+    height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shine 1.5s infinite;
+  margin-top: 10px; /* Space between the SVG and the line */
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
